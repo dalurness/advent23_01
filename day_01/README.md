@@ -4,7 +4,7 @@ Do you have any idea how many letters Santa gets each year before Christmas? Mil
  
 **Problem**: In order to prepare for this Christmas season, some of the head elves would like a report on how many letters are coming from each country. The elves physically receiving the letters have been inputting the country code of the letter into a file named *"letters.txt"*. You need to read this file, and then report how many letters have been sent from each country.
 
-**Challenge**: A *"letters_challenge.txt"* has also been included if you'd like some extra credit. There is a lot more data in this file, so it may need to be handled a bit differently to be able to compute in a reasonable amount of time. Remember, these are just samples of the actual data we need to run your program against to count the letters from the whole world!
+**Challenge**: A *"letters_challenge.txt"* has also been included if you'd like some extra credit. There is a lot more data in this file, so it may need to be handled a bit differently so as not to overload your memory. (Note: github has limitations on file size. Feel free to use the python script to make a larger file).
 
 **Example**:
 

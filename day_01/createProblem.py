@@ -1,4 +1,4 @@
-# Figured I would include this in the repo
+# Figured I would include this in the repo. feel free to make a larger challenge file to test yourself
 
 from random import randrange
 
