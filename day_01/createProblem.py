@@ -3,7 +3,7 @@
 from random import randrange
 
 f = open("letters_challenge.txt", "a")
-for i in range(0, 1000000):
+for i in range(0, 10000000):
     f.write(str(randrange(1, 197)) + ' ')
 
 # with open("letters_challenge.txt") as f:
