@@ -36,3 +36,8 @@ OOXXXXXXOOOOOOOOOOOOOOOOOOOO
 
 **Challenge**:
 Find the optimal path for Santa to go!
+
+**Notes**:
+Use any language you like. Post/link results and source code in channel (feel free to add comments and/or ask for help). If you post the answer, you can "hide" it in discord by having two "pipes" on either side.
+Ex: ```||Result||```
+
