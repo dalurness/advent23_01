@@ -1,4 +1,4 @@
-# Day 4: Elf Assembly Line
+# Day 3: Elf Assembly Line
 
 On a particular day at the North Pole, the elves are running an assembly line packaging presents. Each present is assigned a code upon completion that contains a sequence of instructions for how to assemble it. However, there seems to be a problem with the printer, and now, many presents have invalid sequences!
 
