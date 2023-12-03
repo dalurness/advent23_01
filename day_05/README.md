@@ -63,4 +63,4 @@ Should output:
  3
 ```
 
-**You will find numbered files (eg `1.txt`, etc), render them**.
+**You will find numbered files (eg `1.txt`, etc), render them**. `0.txt` is small and may be a good starting point.
