@@ -1,4 +1,4 @@
-# Day 3: Elf Assembly Line
+# Day 4: No Time To Waste!
 
 It's crunch time! Holly (one of the floor managers in manufacturing warehouse number 14) is getting pretty stressed about being able to finish the required amount of work that has been allocated to her team. She needs to figure out how much time it is going to take her team to finish this batch of presents so that she can get a portion of this batch reassigned before it is too late. 
 
