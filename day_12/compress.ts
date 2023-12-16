@@ -1,36 +1,40 @@
-function main() {
-  const MAX_REPLACE_LEN = 6;
-  let file = new TextDecoder()
-    .decode(Deno.readFileSync("./output1.txt"))
-    .trimEnd();
+import { toText } from "https://deno.land/std@0.209.0/streams/mod.ts";
 
-  let replacers: string[];
+async function main() {
+  const MAX_REPLACE_LEN = 10;
+  let file = await toText(Deno.stdin.readable);
 
-  do {
-    replacers = Array(95)
+  while (true) {
+    const replacer = Array(95)
       .fill(0)
       .map((_, i) => String.fromCharCode(i + 32))
       .filter((c) => !file.includes(c))
-      .sort(() => Math.sign(Math.random() - 0.5));
+      .sort(() => Math.sign(Math.random() - 0.5))
+      .at(0);
 
-    const replacer = replacers.pop()!;
-    const map: Record<string, number> = { "": file.length };
+    if (!replacer) {
+      break;
+    }
 
-    for (let i = 0; i < file.length; ++i) {
-      for (let j = 3; j <= MAX_REPLACE_LEN; ++j) {
-        const slice = file.slice(i, i + j);
+    const replace_map: Record<string, number> = { "": file.length };
 
-        if (slice in map) {
+    for (let i = 0; i < file.length - 1; ++i) {
+      for (let j = 2; j < MAX_REPLACE_LEN; ++j) {
+        const slice = file.slice(i, i + j + 1);
+
+        if (slice in replace_map) {
           continue;
         }
 
         const new_length = file.replaceAll(slice, replacer).length;
-        map[slice] = new_length;
+        replace_map[slice] = new_length;
       }
     }
 
-    const min = Object.entries(map).sort(([, la], [, lb]) => la - lb)[0];
-    // console.log(min);
+    const min = Object.entries(replace_map)
+      .sort(([, la], [, lb]) => la - lb)
+      .at(0)!;
+    // console.error(min);
 
     if (min[1] >= file.length) {
       break;
@@ -38,7 +42,7 @@ function main() {
 
     console.log(`${replacer} => ${JSON.stringify(min[0])}`);
     file = file.replaceAll(min[0], replacer);
-  } while (replacers.length);
+  }
 
   console.log("\n" + file);
 }
