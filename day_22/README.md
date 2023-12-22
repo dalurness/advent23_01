@@ -8,19 +8,20 @@ A text file "presents.txt" contains one batch of presents per line. Figure out w
 
 #### Example:
 Input:
-`
-5 2 12 3 
+```
+5 2 12 3
 7 4 9 10
-`
+```
 Output:
-`
-3 1
-`
+```
+3 
+1
+```
 
 #### Challenge:
 Include the mapping of necessary swaps. 
 ##### Example Challenge output:
-`
+```
 3 (5:2,12:3,5:3) 
 1 (7:4)
-`
+```
