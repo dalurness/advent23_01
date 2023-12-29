@@ -4,7 +4,7 @@ Santa has an incredibly busy schedule, managing the toy workshop, checking the n
 
 Last year, due to some absentmindednes, Santa ended up with some double-booked appointments, meaning that two or more events were scheduled to occur at the same exact time. Now with a new year approaching, Santa wants to avoid the same scheduling conflicts.
 
-Your task is to write a program that will receive a list of Santa’s appointments from last year. Each appointment consists of a start time and an end time (inclusive to exclusive: the start time is included in the schedule while the end time is the minute the next event can start). You are to find and return the total number of minutes that were double booked so Santa can see how much time he might’ve wasted.
+Your task is to write a program that will receive a list of Santa’s appointments from last year. Each appointment consists of a start time and an end time (inclusive to exclusive: the start time is included in the schedule while the end time is the minute the next event can start). You are to find and return the total number of minutes that were double booked so Santa can see how much time he might've wasted.
 
 
 Example:
